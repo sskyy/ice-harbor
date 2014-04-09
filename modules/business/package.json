@@ -1,0 +1,11 @@
+{
+  "name": "ice-harbor-business",
+  "version": "0.0.1",
+  "description": "business for ice-harbor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jiamiu",
+  "license": "MIT"
+}
