@@ -34,16 +34,7 @@ function userPost(){
 
 }
 
-function robotPut(lastName){
 
-  var bus = this,User=bus.data('$$models').user
-  User.create({
-    first_name : parseInt(Math.random()*1000),
-    last_name : 'robot'
-  },function(err,user){
-//    console.log("create done:",err, user)
-  })
-}
 
 /**
  * 5 system key :

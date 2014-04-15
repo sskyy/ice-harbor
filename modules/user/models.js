@@ -7,8 +7,7 @@ module.exports = {
       "type" : "string"
     },
     "password": {
-      "type" : "string",
-      "password" : true
+      "type" : "string"
     },
     "github" : {
       "type" : "string",

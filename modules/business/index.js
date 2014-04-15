@@ -18,23 +18,24 @@ exports.info = {
       console.log("request should fire in dev stack")
       return function toTestRespondFunction(){
         console.log("respond should fire in dev stack")
+        return 1111
       }
     },
     "request.put.user": function () {
       return function () {
         var bus = this
-        this.data('$$models').user.find().then(function (users) {
-          bus.data('$$ctx').body = users
-        })
+//        this.data('$$models').user.find().then(function (users) {
+//          bus.data('$$ctx').body = users
+//        })
       }
     },
     "request.get.users": function () {
       return function () {
-        var bus = this
-        this.data('$$models').user.find().then(function (users) {
-          console.log("real ctx should be replaced",JSON.stringifybus.data('$$ctx'))
-          bus.data('$$ctx').body = users
-        })
+//        var bus = this
+//        this.data('$$models').user.find().then(function (users) {
+//          console.log("real ctx should be replaced",JSON.stringifybus.data('$$ctx'))
+//          bus.data('$$ctx').body = users
+//        })
       }
     }
   },
